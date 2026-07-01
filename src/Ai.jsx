@@ -694,7 +694,7 @@ const cardsData = [
 
         {/* RIGHT BLOCK */}
         <div className="w-full mt-14">
-          <div className="font-semibold text-[28px] text-zinc-950">
+          <div className="font-semibold text-[28px] text-white">
             <h1>
               Unlock Powerful AI Capabilities for Effortless Building
             </h1>
@@ -936,7 +936,7 @@ const cardsData = [
         {/* RIGHT */}
         <div className="slide-up w-full xl:w-[65%] mt-14 xl:mt-0">
 
-          <div className="font-semibold text-[26px] sm:text-[34px] xl:text-[44px] text-zinc-950">
+          <div className="font-semibold text-[26px] sm:text-[34px] xl:text-[44px] text-white">
             <h1>
               Unlock Powerful AI Capabilities for
               <br />

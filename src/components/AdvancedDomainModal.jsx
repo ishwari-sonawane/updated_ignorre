@@ -293,7 +293,7 @@ function AdvancedSearchForm({ onClose }) {
       if (charTypes.Numbers) {
         const numbered = [];
         for (const kw of expandedKeywords) {
-          for (let i = 1; i <= 9; i++) {
+          for (let i = 1; i <= 99; i++) {
             numbered.push(`${kw}${i}`);
           }
         }
@@ -303,9 +303,8 @@ function AdvancedSearchForm({ onClose }) {
       if (charTypes.Hyphens) {
         const hyphenated = [];
         for (const kw of expandedKeywords) {
-          if (kw.length > 3) {
-            const mid = Math.floor(kw.length / 2);
-            hyphenated.push(`${kw.slice(0, mid)}-${kw.slice(mid)}`);
+          for (let pos = 2; pos < kw.length - 1; pos++) {
+            hyphenated.push(`${kw.slice(0, pos)}-${kw.slice(pos)}`);
           }
         }
         expandedKeywords.push(...hyphenated);
@@ -315,13 +314,10 @@ function AdvancedSearchForm({ onClose }) {
       for (const keyword of [...new Set(expandedKeywords)]) {
         for (const tld of selectedTLDs) {
           const fullDomain = `${keyword}${tld}`;
-          const namePart = keyword;
 
-          if (namePart.length > domainLength) continue;
-
-          const available = Math.random() > 0.4;
+          const available = Math.random() > 0.3;
           const basePrice = TLD_PRICES[tld] || 14.99;
-          const price = available ? Number((basePrice + Math.random() * 3).toFixed(2)) : null;
+          const price = available ? Number((basePrice + Math.random() * 5).toFixed(2)) : null;
 
           generated.push({
             domain: fullDomain,
@@ -330,19 +326,6 @@ function AdvancedSearchForm({ onClose }) {
             tld,
           });
         }
-      }
-
-      let filtered = [...generated];
-
-      if (domainOptions['Hide Unavailable']) {
-        filtered = filtered.filter((r) => r.available);
-      }
-
-      if (minPrice) {
-        filtered = filtered.filter((r) => r.price !== null && r.price >= Number(minPrice));
-      }
-      if (maxPrice) {
-        filtered = filtered.filter((r) => r.price !== null && r.price <= Number(maxPrice));
       }
 
       const sortMap = {
@@ -355,9 +338,9 @@ function AdvancedSearchForm({ onClose }) {
           return order.indexOf(a.tld) - order.indexOf(b.tld);
         },
       };
-      filtered.sort(sortMap[sortBy] || sortMap.Relevance);
+      generated.sort(sortMap[sortBy] || sortMap.Relevance);
 
-      navigate('/search-results', { state: { results: filtered, query: domainsText } });
+      navigate('/search-results', { state: { results: generated, query: domainsText } });
     }, 400);
   }, [domainsText, selectedTLDs, domainLength, charTypes, domainOptions, minPrice, maxPrice, sortBy, selectedPrefixes, selectedSuffixes, navigate]);
 
