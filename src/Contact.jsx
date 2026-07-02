@@ -15,12 +15,14 @@ export default function SupportSalesSection() {
       <div className="max-w-7xl mx-auto">
         {/* Top Heading */}
         <div className="text-center mb-20">
-          <p className="text-zinc-950 text-[14px] font-semibold inline-block pb-1">
+
+          {/* <p className="text-zinc-950 text-[14px] font-semibold inline-block pb-1"> */}
+          <p className="text-[#e90011] text-[14px] font-medium inline-block pb-1">
             GET IN TOUCH
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-6 leading-tight text-zinc-950">
-            Support &amp; Sales
+            Support &amp; <span className="text-[#e90011]">Sales</span>
           </h1>
 
           <p className="text-zinc-500 text-base sm:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
@@ -48,7 +50,8 @@ export default function SupportSalesSection() {
             <div className="space-y-10">
               {/* Email */}
               <div className="flex items-start gap-4">
-                <IoMailUnread className="w-6 h-6 text-zinc-950 mt-1" />
+                {/* <IoMailUnread className="w-6 h-6 text-zinc-950 mt-1" /> */}
+                <IoMailUnread className="w-6 h-6 text-[#e90011] mt-1" />
                 <div>
                   <p className="text-zinc-950 md:text-zinc-950 font-medium">
                     Email
@@ -59,7 +62,8 @@ export default function SupportSalesSection() {
 
               {/* Phone */}
               <div className="flex items-start gap-4">
-                <FaPhone className="w-6 h-6 text-zinc-950 mt-1" />
+                {/* <FaPhone className="w-6 h-6 text-zinc-950 mt-1" /> */}
+                <FaPhone className="w-6 h-6 text-[#e90011] mt-1" />
                 <div>
                   <p className="text-zinc-950 md:text-zinc-950 font-medium">
                     Phone
@@ -70,7 +74,8 @@ export default function SupportSalesSection() {
 
               {/* Address */}
               <div className="flex items-start gap-4">
-                <RiMapPin2Fill className="w-6 h-6 text-zinc-950 mt-1" />
+                {/* <RiMapPin2Fill className="w-6 h-6 text-zinc-950 mt-1" /> */}
+                <RiMapPin2Fill className="w-6 h-6 text-[#e90011] mt-1" />
                 <div>
                   <p className="text-zinc-950 md:text-zinc-950 font-medium">
                     Address
@@ -140,8 +145,11 @@ export default function SupportSalesSection() {
               {/* Button */}
               <button
                 type="submit"
+
                 className="w-full bg-black border border-gray-900 hover:border-zinc-400 rounded-xl py-4 text-lg font-semibold transition duration-300"
-              >
+
+                className="w-full bg-gradient-to-r from-red-500 to-red-600 border border- hover:border-zinc-400 rounded-xl py-4 text-lg font-semibold transition duration-300">
+              
                 Send Message
               </button>
             </form>

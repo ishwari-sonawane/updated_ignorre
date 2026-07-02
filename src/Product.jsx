@@ -70,7 +70,11 @@ const Product = () => {
     { icon: FiShield, title: "Security & SSL", description: "Protect domains, servers, and customer data with SSL automation and threat monitoring.", status: "Coming Soon" },
     { icon: FiLock, title: "SSL Certificates", description: "Enable HTTPS instantly with automated SSL certificates and full encryption security.", status: "Coming Soon" },
     { icon: FiDatabase, title: "Dedicated Hosting", description: "Enterprise-grade dedicated servers for maximum speed, power, and reliability.", status: "Coming Soon" },
+
     // { icon: IoGridOutline, title: "Subscription Hub", description: "Manage all domain, hosting, and server subscriptions in one unified billing dashboard.", status: "Coming Soon" },
+
+    { icon: IoGridOutline, title: "Subscription Hub", description: "Manage all domain, hosting, and server subscriptions in one unified billing dashboard.", status: "Coming Soon" },
+
   ];
 
   // const navigate = useNavigate();
@@ -83,7 +87,7 @@ const Product = () => {
         <motion.span 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-zinc-950 font-semibold text-sm tracking-wider uppercase mb-4 block "
+          className="text-red-600 font-semibold text-sm tracking-wider uppercase mb-4 block "
         >
           Products
         </motion.span>

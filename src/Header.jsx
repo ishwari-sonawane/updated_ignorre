@@ -19,6 +19,8 @@ const Header = () => {
     const [active, setActive] = useState("Home");
     const [menuOpen, setMenuOpen] = useState(false);
      const location = useLocation();
+    // const location = useLocation();
+
 
     return (
         <nav className="w-full bg-white border-b border-zinc-200 abc sticky top-0 z-50">
@@ -59,7 +61,7 @@ const Header = () => {
                     <div className="relative group">
 
                     
-                  <Link
+                  {/* <Link
   to="/product"
   onClick={() => setMenuOpen(false)}
   className={`cursor-pointer flex items-center gap-1 ${
@@ -69,12 +71,29 @@ const Header = () => {
   } hover:text-red-600`}
 >
   Products <MdKeyboardArrowDown className='text-[20px] hidden lg:block' />
-</Link>
+</Link> */}
+
+
+                    <div className="relative group">
+
+
+                        <Link
+                            to="/product"
+                            onClick={() => setMenuOpen(false)}
+                            className={`cursor-pointer flex items-center gap-1 ${location.pathname === "/product"
+                                    ? "text-red-600"
+                                    : "text-zinc-700"
+                                } hover:text-red-600`}
+                        >
+                            Products <MdKeyboardArrowDown className='text-[20px] hidden lg:block' />
+                        </Link>
+
 
                         <div className="hidden lg:block fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[45vh] bg-white shadow-2xl rounded-2xl p-8 z-50 
                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
 
                             <div className="grid grid-cols-3 gap-6 h-full">
+
 
                               <div className="col-span-2 grid grid-cols-2 gap-6 content-start">
 
@@ -165,117 +184,121 @@ const Header = () => {
                                 </button></a>
                               </div>
 
-                            </div>
+                                
 
+                            </div>
                         </div>
                     </div> 
+                    </div>
 
-                    {/* <ProductsDropdown
-                        active={active}
-                        setActive={setActive}
-                        setMenuOpen={setMenuOpen}
-                    /> */}
+                 
 
 
 
 
                     <div className="relative group">
 
-                        {/* Trigger */}
-                      <Link
-  to="/features"
-  onClick={() => setMenuOpen(false)}
-  className={`cursor-pointer flex items-center gap-1 ${
-    location.pathname === "/features"
-      ? "text-red-600"
-      : "text-zinc-700"
-  } hover:text-red-600`}
->
-  Features <MdKeyboardArrowDown className='text-[20px] hidden lg:block'/>
-</Link>
+      
+                        <Link
+                            to="/features"
+                            onClick={() => setMenuOpen(false)}
+                            className={`cursor-pointer flex items-center gap-1 ${location.pathname === "/features"
+                                    ? "text-red-600"
+                                    : "text-zinc-700"
+                                } hover:text-red-600`}
+                        >
+                            Features <MdKeyboardArrowDown className='text-[20px] hidden lg:block' />
+                        </Link>
+
                         {/* Dropdown */}
                         <div className="hidden lg:block fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[35vh] bg-white shadow-2xl rounded-2xl p-8 z-50 
                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             {/* LEFT */}
                             <div className="grid grid-cols-3 gap-6 h-full">
 
-                              <div className="col-span-2 grid grid-cols-2 gap-6 content-start">
+                           
 
-                                <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
-                                    <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
-                                        <GoGlobe />
-                                    </div>
-                                    <div>
-                                        <h1 className="font-semibold text-[18px]">Domain Control</h1>
-                                        <p className="text-sm text-zinc-500 ">
-                                            Manage all domains in one<br /> hub
-                                        </p>
-                                    </div>
+                                <div className="col-span-2 grid grid-cols-2 gap-6 content-start">
+
+                                    <Link to="/Domain_Control">
+                                        <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
+                                            <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
+                                                <GoGlobe />
+                                            </div>
+                                            <div>
+                                                <h1 className="font-semibold text-[18px]">Domain Control</h1>
+                                                <p className="text-sm text-zinc-500 ">
+                                                    Manage all domains in one<br /> hub
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </Link>
+
+                                    <Link to="/Hosting_Automation">
+                                        <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
+                                            <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
+                                                <FaNetworkWired />
+                                            </div>
+                                            <div>
+                                                <h1 className="font-semibold text-[18px]">Hosting Automation</h1>
+                                                <p className="text-sm text-zinc-500 ">
+                                                    Smart hosting workflow
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Link>
+
+                                    <Link to="/Server_Monitoring">
+                                        <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
+                                            <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
+                                                <FaRegChartBar />
+                                            </div>
+                                            <div>
+                                                <h1 className="font-semibold text-[18px]">Server Monitoring</h1>
+                                                <p className="text-sm text-zinc-500 ">
+                                                    Track uptime & server<br /> health
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Link>
+
+                                    <Link to="/Subscription_Hub">
+                                        <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
+                                            <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
+                                                <LuBrain />
+                                            </div>
+                                            <div>
+                                                <h1 className="font-semibold text-[18px]">Subscription Hub</h1>
+                                                <p className="text-sm text-zinc-500">
+                                                    Unified billing dashboard
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Link>
                                 </div>
 
-                                <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
-                                    <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
-                                        <FaNetworkWired />
-                                    </div>
+                                {/* RIGHT CARD */}
+                                <div className="bg-red-50 rounded-xl p-6 flex flex-col justify-between">
                                     <div>
-                                        <h1 className="font-semibold text-[18px]">Hosting Automation</h1>
-                                        <p className="text-sm text-zinc-500 ">
-                                            Smart hosting workflow
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
-                                    <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
-                                        <FaRegChartBar />
-                                    </div>
-                                    <div>
-                                        <h1 className="font-semibold text-[18px]">Server Monitoring</h1>
-                                        <p className="text-sm text-zinc-500 ">
-                                            Track uptime & server<br /> health
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4 cursor-pointer hover:bg-red-50 hover:text-red-600 p-4 rounded-lg">
-                                    <div className='bg-zinc-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
-                                        <LuBrain />
-                                    </div>
-                                    <div>
-                                        <h1 className="font-semibold text-[18px]">Subscription Hub</h1>
+                                        <h3 className="font-semibold text-lg mb-2">
+                                            Explore Features
+                                        </h3>
                                         <p className="text-sm text-zinc-500">
-                                            Unified billing dashboard
+                                            Ignorre gives you everything in one platform — domains, DNS,
+                                            email, SEO, and AI powered automation.
                                         </p>
                                     </div>
+
+                                    <a href="/features"><button className="mt-6 bg-black text-white rounded-full py-2 text-sm w-full">
+                                        View All Features →
+                                    </button></a>
                                 </div>
-
-                              </div>
-
-                              {/* RIGHT CARD */}
-                              <div className="bg-red-50 rounded-xl p-6 flex flex-col justify-between">
-                                <div>
-                                    <h3 className="font-semibold text-lg mb-2">
-                                        Explore Features
-                                    </h3>
-                                    <p className="text-sm text-zinc-500">
-                                        Ignorre gives you everything in one platform — domains, DNS,
-                                        email, SEO, and AI powered automation.
-                                    </p>
-                                </div>
-
-                                <a href="/features"><button className="mt-6 bg-black text-white rounded-full py-2 text-sm w-full">
-                                    View All Features →
-                                </button></a>
-                              </div>
 
                             </div>
 
                         </div>
                     </div>
-
-
-
-
 
 
                    <Link
@@ -329,6 +352,8 @@ const Header = () => {
 >
   Contact
 </Link>
+
+
 
                     <div className="lg:hidden w-full pt-4">
                         <button className=" bg-black text-white px-5 py-3 rounded-full text-sm font-medium hover:bg-zinc-800 transition">

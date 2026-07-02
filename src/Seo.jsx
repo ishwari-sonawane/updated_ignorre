@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import useSlideUp from "./useSlideUpOnScroll";
 import redstar from './assets/redstar.svg'
 import redinput from './assets/redinput.svg'
+import Star from './assets/Star.svg'
+import input from './assets/input.svg'
 import { FaGlobe } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
@@ -44,6 +46,11 @@ import redscore from './assets/redscore.svg'
 import redstar2 from './assets/redstar2.svg'
 import redstarh from './assets/redstarh.svg'
 import redbrandbg from './assets/redbrandbg.png'
+import traffic from './assets/traffic.svg'
+import score from './assets/score.svg'
+import star2 from './assets/star2.svg'
+import starh from './assets/starh.svg'
+import brand from './assets/brand.svg'
 import whyus1 from './assets/whyus1.png'
 import whyus2 from './assets/whyus2.png'
 import whyus3 from './assets/whyus3.png'
@@ -358,6 +365,7 @@ const faqs = [
       {/* BADGES */}
       <div className="flex flex-wrap justify-center items-center gap-3 mb-8">
         <div className="flex gap-2 bg-zinc-100 w-25 justify-center items-center rounded-3xl p-2">
+
           <img src={redstar} alt="" />
           <p className="reveal-text text-[#DC2626] font-medium abc">
             New
@@ -375,6 +383,7 @@ const faqs = [
       <div className="flex flex-col items-center text-center gap-3 px-4">
         <h1 className="reveal-text text-[36px] sm:text-[44px] lg:text-[50px] xl:text-[58px] font-bold text-zinc-950 leading-[1.3] abc">
           AI-Powered <span className="text-[#E7000B]">SEO Intelligence</span>
+
           <br className="hidden sm:block" />
           That Drives Rankings
         </h1>
@@ -388,7 +397,9 @@ const faqs = [
 
       {/* CTA BUTTONS */}
       <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+
         <div className="h-14 w-full sm:w-[180px] rounded-2xl flex items-center justify-center border border-red-600 bg-[#E7000B] hover:brightness-110 transition">
+
           <button className="text-[14px] text-white font-medium abc">
             Start SEO Analysis
           </button>
@@ -405,6 +416,7 @@ const faqs = [
       <div className="flex justify-center mt-10 px-4">
         <img
           src={redinput}
+
           alt=""
           className="
             rounded-2xl
@@ -448,6 +460,7 @@ const faqs = [
         {/* RIGHT TOP */}
         <div className="absolute top-[320px] right-[30px] xl:right-[60px] w-[220px] xl:w-[260px] bg-zinc-100 p-3 rounded-2xl abc">
           <div className="flex items-center gap-2 bg-white w-35 rounded-xl p-1">
+
             <RiInstagramFill className="text-[#E7000B]" size={20} />
             <p className="text-[#E7000B]">Social Media</p>
           </div>
@@ -460,6 +473,7 @@ const faqs = [
         {/* RIGHT BOTTOM */}
         <div className="absolute top-[500px] right-[20px] xl:right-[40px] w-[220px] xl:w-[260px] bg-zinc-100 p-3 rounded-2xl abc">
           <div className="flex items-center gap-2 bg-white w-25 rounded-xl p-1">
+
             <IoMdPricetag className="text-[#E7000B]" size={20} />
             <p className="text-[#E7000B]">Brand</p>
           </div>
@@ -493,6 +507,7 @@ const faqs = [
         <div className='flex flex-col lg:flex-row justify-center gap-8 2xl:gap-5 mt-12 2xl:mt-15 items-center px-4'>
           <div>
               <div className='slide-up h-auto lg:h-75 2xl:h-75 w-90 ml-5 sm:w-[90%] md:w-[80%] lg:w-[500px] 2xl:w-140 bg-white border border-zinc-200 rounded-2xl shadow-xl p-5 mx-auto'>
+
                 <p className='reveal-text text-[14px] text-[#E7000B] mt-3'>Keyword-Optimized Content</p>
                 <p className='reveal-text text-[20px] text-zinc-950 mt-5 font-semibold'>How to Rank for High-Intent Keywords</p>
                 <p className='reveal-text text-[14px] text-zinc-400 mt-5'>Analyze search intent, keyword difficulty, and SERP competitors before creating <br/>content.</p>
@@ -561,7 +576,9 @@ const faqs = [
                     </div>
             </div>
 
+
             <p className='slide-up reveal-text text-[20px] 2xl:text-[24px] font-medium mt-5 mb-3 text-center lg:text-left text-[#E7000B]'>Optimize & Refine</p>
+
             <p className='slide-up reveal-text text-[15px] 2xl:text-[16px] text-zinc-500 text-center lg:text-left'>Refine pages with AI-powered optimization signals to rank higher and<br/> convert better.</p>
 
             </div>
@@ -572,8 +589,10 @@ const faqs = [
     <div className='flex flex-col lg:flex-row justify-center gap-8 2xl:gap-5 mt-12 2xl:mt-15 items-center px-4'>
           <div className="2xl:ml-12 lg:ml-20">
               <div className='slide-up lg:h-75 2xl:h-65 w-full sm:w-[90%] lg:w-[500px] 2xl:w-140 bg-white border border-zinc-200 rounded-2xl shadow-xl p-5 lg:ml-5 xl:ml-0'>
+
                 <p className=' text-[20px] mt-3 mb-5 font-medium text-[#E7000B]'>Organic Search Growth</p>
                 <img src={redtraffic} alt="" />
+
                 <div className='flex justify-between mt-5'>
                     <p className='text-[16px] font-medium text-zinc-400'>Engagement Rate</p>
                     <p className='text-[16px] font-medium'>50%</p>
@@ -583,18 +602,24 @@ const faqs = [
                     <p className='text-[16px] font-medium'>20%</p>
                 </div>
             </div>
+
             <p className='slide-up reveal-text text-[20px] 2xl:text-[24px] font-medium mt-5 mb-3 text-center lg:text-left text-[#E7000B]'>Publish & Optimize</p>
+
             <p className='slide-up reveal-text text-[15px] 2xl:text-[16px] text-zinc-500 text-center lg:text-left'>Deploy SEO-optimized pages faster across your websites.</p>
           </div>
 
           <div>
               <div className='slide-up lg:h-75 2xl:h-65 w-full sm:w-[90%] lg:w-[500px] 2xl:w-140 bg-white border border-zinc-200 rounded-2xl shadow-xl p-5 lg:ml-5 xl:ml-0'>
+
                 <p className='text-[20px] text-[#E7000B] mt-3 font-medium'>SEO Content Score</p>
+
                  <div className='flex justify-between mt-3 mb-3'>
                     <p className='text-[16px] font-medium text-zinc-400'>Average SEO Score</p>
                     <p className='text-[16px] font-medium'>85 / 100</p>
                 </div>
+
                 <img src={redscore} alt="" />
+
                 <div className='flex justify-between mt-3'>
                     <p className='text-[16px] font-medium text-zinc-400'>Active SEO Users</p>
                     <p className='text-[16px] font-medium'>10,000+</p>
@@ -604,7 +629,9 @@ const faqs = [
                     <p className='text-[16px] font-medium'>95%</p>
                 </div>
             </div>
+
             <p className='slide-up reveal-text text-[20px] 2xl:text-[24px] font-medium mt-5 mb-3 text-center lg:text-left text-[#E7000B]'>SEO Performance Tracking</p>
+
             <p className='slide-up reveal-text text-[15px] 2xl:text-[16px] text-zinc-500 text-center lg:text-left'>Track rankings, traffic, conversions, and ROI across keywords and competitors.</p>
           </div>
            
@@ -626,7 +653,9 @@ const faqs = [
   >
     {/* LEFT CONTENT */}
     <div className="text-center lg:text-left">
+
       <button className="text-[14px] font-medium text-[#E7000B]">
+
         AI SEO Platform
       </button>
 
@@ -639,7 +668,9 @@ const faqs = [
         AI-powered insights to create content that ranks, attracts traffic, and converts.
       </p>
 
+
       <div className="h-14 w-full sm:w-60 lg:w-50 mt-5 rounded-2xl flex items-center justify-center bg-[#E7000B] hover:brightness-110 transition mx-auto lg:mx-0">
+
         <button className="text-[16px] text-white font-semibold">
           Start SEO Analysis
         </button>
@@ -658,6 +689,7 @@ const faqs = [
       "
     >
       <div className="flex justify-center lg:justify-start">
+
         <img src={redstar2} alt="" className="h-8" />
         <img src={redstar2} alt="" className="h-8" />
         <img src={redstar2} alt="" className="h-8" />
@@ -670,6 +702,7 @@ const faqs = [
       </p>
 
       <p className="text-[15px] lg:text-[16px] text-[#E7000B] font-medium mt-3 text-center lg:text-left">
+
         Updated in real time
       </p>
 
@@ -728,10 +761,12 @@ const faqs = [
       "
     >
       <p className="reveal-text text-[22px] lg:text-[24px] font-medium mt-0 text-center lg:text-left text-zinc-950">
+
         Results-Driven <span className="text-[#E7000B]">SEO</span> Performance
       </p>
 
       <p className="text-[15px] lg:text-[16px] text-[#E7000B] font-medium mt-3 text-center lg:text-left">
+
         Updated in real time
       </p>
 
@@ -762,14 +797,18 @@ const faqs = [
         </div>
       </div>
 
+
       <div className="flex justify-center lg:justify-start -mt-13">
         <img src={redbrandbg} alt="" />
+
       </div>
     </div>
 
     {/* RIGHT CONTENT */}
     <div className="text-center lg:text-left">
+
       <button className="text-[14px] font-medium text-[#E7000B]">
+
         SEO Strategy
       </button>
 
@@ -786,7 +825,9 @@ const faqs = [
         grow organic visibility.
       </p>
 
+
       <div className="h-14 w-full sm:w-60 lg:w-50 mt-5 rounded-2xl flex items-center justify-center bg-[#E7000B] hover:brightness-110 transition mx-auto lg:mx-0">
+
         <button className="text-[16px] text-white font-semibold">
           Start SEO Analysis
         </button>
@@ -796,9 +837,11 @@ const faqs = [
 </div>
 
 
+
 <div className="flex flex-col justify-center items-center text-center pt-24 lg:pt-30 px-4 bg-white abc">
   <div className="slide-up">
     <button className="text-[14px] font-medium text-[#E7000B]">
+
       SEO Productivity
     </button>
 
@@ -905,7 +948,9 @@ const faqs = [
 </div>
 
 
+
 <div className="bg-black abc mt-30 pb-20">
+
   <div
     className="
       slide-up
@@ -918,6 +963,7 @@ const faqs = [
       px-4
     "
   >
+
     <button className="text-[14px] font-medium text-[#E7000B]">
       Why Us
     </button>
@@ -929,7 +975,9 @@ const faqs = [
       <span className="text-red-600">elevate your search</span>
       <br className="hidden sm:block" />
       performance with{" "}
+
       <span className="text-white">AI-driven insights</span>.
+
     </p>
 
     <p className="reveal-text mt-6 lg:mt-10 text-zinc-500 text-[15px] lg:text-[16px] font-medium">
@@ -943,6 +991,7 @@ const faqs = [
 
 
 <section id="testimonials" className='bg-white abc'>
+
   <div className='flex flex-col justify-center items-center text-center pt-30'>
      <button className='text-[14px] font-medium text-[#E7000B]'>Testimonial</button>
     <p className='reveal-text text-[48px] text-zinc-950 font-bold'>What SEO Team Say About <br/><span className='text-red-600'>Ignorre SEO</span></p>
@@ -960,13 +1009,17 @@ const faqs = [
           />
 
           {/* CONTENT */}
+
           <p className="font-bold text-[#E7000B] text-[16px]">{item.name}</p>
+
 
           <p className="mt-2 text-[16px] font-medium text-zinc-600">
             {item.text}
           </p>
 
+
           <p className="mt-3 text-[16px] font-bold text-[#E7000B]">
+
             {item.role}
           </p>
         </div>
@@ -974,7 +1027,9 @@ const faqs = [
     </div>
 </section>
 
+
 <section id="pricing" className='bg-black abc mt-30 pb-20'>
+
   {/* HEADER */}
   <div
     className="
@@ -990,10 +1045,12 @@ const faqs = [
     "
   >
     <div>
+
       <button className="text-[14px] font-medium text-[#E7000B]">
         Pricing
       </button>
       <p className="reveal-text text-[32px] sm:text-[40px] lg:text-[48px] text-white font-bold mt-3">
+
         Flexible <span className="text-red-600">SEO Plans</span>
       </p>
     </div>
@@ -1096,6 +1153,7 @@ const faqs = [
          <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Track up to 250 keywords</p></div>
          <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>1 SEO project</p></div>
         <div className='flex items-center justify-center'>
+
           <button className='text-[16px] text-white rounded-2xl w-80 h-13 bg-[#E7000B] hover:brightness-110 transition'>Choose This</button>
         </div>
       </div>
@@ -1136,7 +1194,9 @@ const faqs = [
         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Dedicated account manager</p></div>
          <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Enterprise-grade security & SLA</p></div>
         <div className='flex items-center justify-center'>
+
           <button className='text-[16px] text-white rounded-2xl w-80 h-13 bg-[#E7000B] hover:brightness-110 transition'>Choose This</button>
+
         </div>
       </div>
     </div>
@@ -1153,7 +1213,9 @@ const faqs = [
           <br className="hidden lg:block" />
           researchers learning SEO.
         </p>
+
         <button className="mt-4 text-[16px] text-white rounded-2xl w-full sm:w-50 h-13 bg-[#E7000B] hover:brightness-110 transition">
+
           Apply Now
         </button>
       </div>
@@ -1213,7 +1275,9 @@ const faqs = [
     "
   >
     <div>
+
       <button className="text-[14px] font-medium text-[#E7000B]">
+
         SEO
       </button>
 
@@ -1232,7 +1296,9 @@ const faqs = [
         ranking signals — so every decision is backed by data.
       </p>
 
+
       <button className="text-[16px] text-white rounded-2xl w-full sm:w-50 h-13 bg-[#E7000B] hover:brightness-110 transition">
+
         Start SEO Analysis
       </button>
     </div>
@@ -1269,6 +1335,7 @@ const faqs = [
   </div>
 </div>
 
+
 <div className='bg-black lg:mt-30 abc lg:pb-20'>
   {/* HEADER */}
   <div className="slide-up flex flex-col justify-center items-center text-center pt-24 lg:pt-20  px-4">
@@ -1282,7 +1349,9 @@ const faqs = [
       <span className="text-red-600"> Stands Out</span>
     </p>
 
+
     <p className="reveal-text text-[15px] lg:text-[16px] font-medium mt-3 text-center max-w-3xl text-zinc-500">
+
       An AI-powered SEO platform built for keyword research, competitor intelligence,
       <br className="hidden lg:block" />
       and real-time search insights — all in one place.
@@ -1306,14 +1375,18 @@ const faqs = [
   >
     {/* IGNORRE SEO CARD */}
     <div className="h-auto w-full sm:w-[95%] md:w-[520px] lg:w-[500px] border border-zinc-200 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
+
       <p className="text-[22px] lg:text-[24px] text-zinc-950 mb-7 font-bold">
+
         Ignorre SEO
       </p>
       <p className="text-[15px] lg:text-[16px] text-zinc-500 font-medium">
         All-in-One AI-Powered SEO & Search Intelligence
       </p>
 
+
       <div className="flex flex-wrap gap-4 mt-6 lg:mt-6">
+
         <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-red-600">
           AI Keyword Research
         </button>
@@ -1346,14 +1419,18 @@ const faqs = [
 
     {/* TRADITIONAL SEO CARD */}
     <div className="h-auto w-full sm:w-[95%] md:w-[520px] lg:w-[500px] border border-zinc-200 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
+
       <p className="text-[22px] lg:text-[24px] text-zinc-950 mb-4 font-bold">
+
         Traditional SEO Tools
       </p>
       <p className="text-[15px] lg:text-[16px] text-zinc-500 font-medium">
         Multiple Tools for SEO & Analytics
       </p>
 
+
       <div className="flex flex-wrap gap-5 mt-6 lg:mt-5">
+
         <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-zinc-200">
           Require multiple tools for SEO
         </button>
@@ -1390,7 +1467,9 @@ const faqs = [
 <section id="faq" className='bg-white abc'>
   {/* HEADER */}
   <div className="flex flex-col justify-center items-center pt-24 lg:pt-50 text-center px-4">
+
     <button className="text-[14px] font-medium text-[#E7000B]">
+
       FAQs
     </button>
 
@@ -1458,7 +1537,9 @@ const faqs = [
 </section>
 
 
+
  <section className="w-full pt-24 lg:pt-50 lg:mt-30 lg:pb-20 bg-black flex items-center justify-center abc">
+
   <div
     className="
       slide-up
@@ -1475,11 +1556,13 @@ const faqs = [
   >
     {/* LEFT CONTENT */}
     <div className="text-center lg:text-left lg:ml-20">
+
       <button className="text-[14px] font-medium text-[#E7000B]">
         Support
       </button>
 
       <h1 className="reveal-text text-[32px] sm:text-[40px] lg:text-[48px] leading-tight font-bold text-white mt-4">
+
         We’re Here to Help
         <br className='hidden '/> 
         <span className="text-red-600"> You Succeed with SEO</span>
@@ -1492,9 +1575,11 @@ const faqs = [
       </p>
 
       {/* Office hours */}
+
       <div className="mt-8 lg:mt-10 text-zinc-500">
         <p className="font-semibold  mb-2">Office Hours</p>
         <p className=" text-[15px] lg:text-[16px] font-medium">
+
           Monday to Friday: 9:00 AM - 6:00 PM <br />
           Saturday: 10:00 AM - 2:00 PM <br />
           Sunday: Closed
@@ -1595,6 +1680,7 @@ const faqs = [
       className="pointer-events-none absolute inset-0 rounded-[24px]"
       style={{
         background: `
+
           linear-gradient(to right, #E7000B, rgba(47,107,255,0.25)) top / 100% 1.5px no-repeat,
           linear-gradient(to bottom, #E7000B, rgba(47,107,255,0.25)) left / 1.5px 100% no-repeat,
           linear-gradient(to right, rgba(214,226,255,0.8), rgba(214,226,255,0.3)) bottom / 100% 1.5px no-repeat,
@@ -1618,14 +1704,18 @@ const faqs = [
         </linearGradient>
 
         <linearGradient id="leftGrad" x1="0" y1="0" x2="0" y2="1">
+
           <stop offset="0%" stopColor="#E7000B" />
+
           <stop offset="100%" stopColor="rgba(47,107,255,0.25)" />
         </linearGradient>
       </defs>
 
       <path d="M24 1 H1076" stroke="url(#topGrad)" strokeWidth="1.5" fill="none" />
       <path d="M1 24 V396" stroke="url(#leftGrad)" strokeWidth="1.5" fill="none" />
+
       <path d="M24 1 C8 1 1 8 1 24" stroke="#E7000B" strokeWidth="1.5" fill="none" />
+
     </svg>
 
     {/* LEFT CONTENT */}

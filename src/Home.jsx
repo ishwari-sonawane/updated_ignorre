@@ -6,7 +6,11 @@ import Header from './Header.jsx'
 import Footer from "./Footer.jsx";
 import { GoArrowRight } from "react-icons/go";
 import { IoGiftOutline } from "react-icons/io5";
+
 import { FiGlobe,  FiLayers, FiMail, FiSliders } from 'react-icons/fi';
+
+// import { FiGlobe,  FiLayers, FiMail } from 'react-icons/fi';
+
 import { TiArrowRight } from "react-icons/ti";
 import { FiZap, FiShield, FiUsers, FiTrendingUp } from 'react-icons/fi';
 import { FaCheck } from 'react-icons/fa';
@@ -19,6 +23,7 @@ import h5 from './assets/h5.jpg'
 import h6 from './assets/h6.jpg'
 import ScrollToTop from './ScrollToTop.jsx';
 
+import Search from'./Search.jsx';
 
 
 
@@ -250,6 +255,8 @@ const ServiceCard = ({ icon: Icon, title, description, status, buttonText, path 
 // put these states at the TOP inside Home()
 
 const navigate = useNavigate();
+
+
 const [query, setQuery] = useState("");
 const [status, setStatus] = useState("idle");
 const [results, setResults] = useState([]);
@@ -310,6 +317,7 @@ useEffect(() => {
     </h1>
 
     {/* SEARCH BAR */}
+
     <div className="mt-8 flex justify-center">
       <div className="w-full max-w-4xl flex flex-col items-center">
 
@@ -386,6 +394,14 @@ useEffect(() => {
       </div>
     </div>
 
+    {/* <div className="mt-8 flex justify-center">
+      <main className="pt-20 pb-32 px-4 flex justify-center">
+         Drop in the Search Component
+         <Search />
+       </main>
+    </div> */}
+
+
     {/* Subtext */}
     <p className="mt-6 text-zinc-500 text-sm md:text-base">
       Instant domain search and availability check.
@@ -429,21 +445,27 @@ useEffect(() => {
   </div>
 </section>
 
+
   <div className="bg-black w-full flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
-      <header className="pt-24 pb-16 px-6 text-center">
+      {/* <header className="pt-24 pb-16 px-6 text-center">
       <motion.span
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-[#E8000F] font-semibold text-sm tracking-wider uppercase mb-6 block "
-      >
+        className="text-[#E8000F] font-semibold text-sm tracking-wider uppercase mb-6 block "></motion.span> */}
+
+    <header className="pt-24 pb-16 px-6 text-center">
+      <motion.span
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-red-600 font-semibold text-sm tracking-wider uppercase mb-6 block  px-6 ">
         Products
       </motion.span>
       <motion.h1
         initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-6xl font-bold text-white mb-6"
-            >
+
+              className="text-4xl md:text-6xl font-bold text-white mb-6">
               Everything You Need in <span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'>One Platform</span>
             </motion.h1>
             <motion.p 
@@ -473,15 +495,23 @@ useEffect(() => {
       <a href="/product"> <button className="-mt-5 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Know More <TiArrowRight className='text-[30px]'/>
         </button></a> 
+
   </div>
 
 
-        <div className="bg-black w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mt-20 mb-10 px-4">
+        <div className="bg-white w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
+          {/* <div className="text-center max-w-4xl mt-20 mb-10 px-4">
         <span className="text-[#E8000F] text-sm font-semibold tracking-wide uppercase abc ">
           Features
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-white abc leading-tight">
+
+        <div className="text-center max-w-4xl mt-20 mb-10 px-4"> */}
+        <span className="text-red-600 text-sm font-semibold tracking-wide uppercase abc ">
+          Features
+        </span>
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-zinc-950 abc leading-tight">
+
           Everything You Need to Power Your <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500">Online Business</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
@@ -528,8 +558,8 @@ useEffect(() => {
              <a href="/features"> <button className="mt-10 sm:mt-15 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Explore More <TiArrowRight className='text-[30px]'/>
         </button></a> 
-        </div>
 
+        </div>
 
                <div className="min-h-screen bg-white text-white py-20 px-4 font-sans selection:bg-red-500/30 overflow-x-hidden abc">
                     {/* Header Section */}
@@ -540,7 +570,11 @@ useEffect(() => {
                       transition={{ duration: 0.8 }}
                       className="max-w-4xl mx-auto text-center mb-16"
                     >
+
                       <p className="text-[#EC001A] font-medium text-sm mb-4 tracking-wide uppercase">Plans</p>
+
+                      {/* <p className="text-zinc-950 font-medium text-sm mb-4 tracking-wide uppercase border border-zinc-200 w-fit mx-auto py-2 rounded-full px-6">Plans</p> */}
+
                       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-zinc-950">
                         Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
                       </h1>
@@ -670,16 +704,24 @@ useEffect(() => {
                       ))}
                     </motion.div>
                   </div>
-                    <a href="/features"> <button className="mt-5 mb-35 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+                    {/* <a href="/features"> <button className=" mt-5 mb-35 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Get Your Plan Now <TiArrowRight className='text-[30px]'/>
-        </button></a> 
+        </button></a>  */}
+
 
         <div className="bg-black w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto px-4 mb-0 text-center z-10 ">
+            {/* <div className="max-w-7xl mx-auto px-4 mb-0 text-center z-10 ">
         <a href="#" className="text-zinc-500 text-xs font-bold tracking-wider uppercase abc  mx-auto py-2 rounded-full px-6">
          Testimonials
         </a>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-white abc"> */}
+
+          <div className="max-w-7xl mx-auto px-4 mb-0 text-center z-10">
+        <a href="#" className="text-red-600 text-xs font-bold tracking-wider uppercase abc">
+         Testimonials
+        </a>
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-white abc">
+
           Trusted by <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
@@ -760,17 +802,23 @@ useEffect(() => {
 
   </div>
 </div>
+
  <a href="/testimonial"> <button className="mt-0 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center justify-center gap-3">
           Read More <TiArrowRight className='text-[30px]'/>
         </button></a> 
         </div>
 
+  
 
         <div className="min-h-screen bg-white text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
             <div className="max-w-3xl mx-auto">
               {/* Header Section */}
               <div className="text-center mb-12">
-                <p className="text-[#E8000F] font-medium mb-4 text-sm uppercase tracking-wide abc">
+
+                {/* <p className="text-[#E8000F] font-medium mb-4 text-sm uppercase tracking-wide abc"> */}
+
+                <p className="text-zinc-950 font-medium mb-4 text-sm uppercase tracking-wide abc">
+
                   Customer Support
                 </p>
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight text-zinc-950 abc">
@@ -821,20 +869,24 @@ useEffect(() => {
                 <p className="text-zinc-500 text-[16px] font-semibold abc">
                   Still have questions?{' '}
                   <br />
-                  
                  <a href="/contact">
               <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 mt-2">
          Contact Our Support Team
         </button>
         </a>
+
+                  
                 </p>
               </div>
             </div>
           </div>
 
 
-        </div>
+        {/* </div> */}
     <Footer />
+
+
+
 
     </>
   )

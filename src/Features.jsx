@@ -63,7 +63,7 @@ const Features = () => {
     <section className="bg-white text-white py-24 px-6 min-h-screen flex flex-col items-center abc">
       {/* Header Section */}
       <div className="text-center max-w-4xl mb-16">
-        <span className="text-zinc-950 text-sm font-semibold tracking-wide uppercase pb-1 abc">
+        <span className="text-red-600 text-sm font-semibold tracking-wide uppercase pb-1 abc">
           Features
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-zinc-950 abc leading-tight">

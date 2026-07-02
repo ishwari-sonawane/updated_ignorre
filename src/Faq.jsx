@@ -52,7 +52,9 @@ const Faq = () => {
       <div className="max-w-3xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <p className="text-zinc-950 font-medium mb-4 text-sm uppercase tracking-wide abc">
+          {/* <p className="text-zinc-950 font-medium mb-4 text-sm uppercase tracking-wide abc"> */}
+
+          <p className="text-[#e90011] font-medium mb-4 text-sm uppercase tracking-wide abc">
             Customer Support
           </p>
           <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-zinc-950 abc">

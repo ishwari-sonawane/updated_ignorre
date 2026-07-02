@@ -109,7 +109,9 @@ const handleSearch = (value) => {
      
          {/* Heading */}
          <h1 className="text-[28px] sm:text-[42px] md:text-[52px] lg:text-[68px] font-extrabold leading-tight text-zinc-950 text-center abc -mt-0">
-              Find Your Perfect <span className="text-[#E8000F]">Domain Name</span>
+
+              Find Your Perfect <span className="text-[#E8000F]"> Domain Name</span>
+    
          </h1>
      
          {/* SEARCH BAR */}
@@ -181,9 +183,15 @@ Secure your brand name in seconds.</p>
      </section>
 
       {/* FEATURES */}
+
    <div className="py-20 px-6 bg-black abc -mt-20">
-  <h3 className="text-3xl sm:text-4xl lg:text-[47px] font-bold text-center mb-4 text-white">
+  {/* <h3 className="text-3xl sm:text-4xl lg:text-[47px] font-bold text-center mb-4 text-white">
     Everything You Need to <span className="text-[#E8000F]">Manage Domains</span>
+
+   <div className="py-20 px-6 bg-white abc -mt-20"> */}
+  <h3 className="text-3xl sm:text-4xl lg:text-[47px] font-bold text-center mb-4 text-white">
+    Everything You Need to Manage Domains
+
   </h3>
   <p className="text-center text-zinc-500 max-w-2xl mx-auto mb-14 text-sm sm:text-base">
     From registration to DNS control, Ignorre Domains gives you complete
@@ -236,6 +244,7 @@ Secure your brand name in seconds.</p>
   })}
 </div>
 </div>
+
   <div className="py-16 px-6 bg-white text-center abc">
       <h3 className="text-3xl sm:text-4xl lg:text-[47px] font-bold text-zinc-950 mb-4">
         Frequently Asked Questions

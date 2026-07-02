@@ -119,10 +119,12 @@ const Testimonial = () => {
     <section className="bg-white text-white py-24 min-h-screen flex flex-col justify-center relative overflow-hidden">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 mb-16 text-center z-10">
-        <a href="#" className="text-zinc-950 text-xs font-bold tracking-wider uppercase abc">
+
+        <a href="#" className="text-red-600 text-xs font-bold tracking-wider uppercase abc">
           Feedback From Our Users
         </a>
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-zinc-950 abc">
+
           Trusted by <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">

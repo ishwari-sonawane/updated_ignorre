@@ -80,7 +80,9 @@ const PricingPage = () => {
     },
   ];
 
-  return (
+
+  return (  
+
     <>
     <ScrollToTop />
     <div className="min-h-screen bg-white text-white py-20 px-4 font-sans selection:bg-red-500/30 overflow-x-hidden abc">
@@ -92,7 +94,10 @@ const PricingPage = () => {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto text-center mb-16 px-4"
       >
-        <p className="text-zinc-950 font-medium text-sm mb-4 tracking-wide uppercase">Plans</p>
+
+
+        <p className="text-[#e90011] font-medium text-[14px] mb-4 tracking-wide uppercase">Plans</p>
+
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-zinc-950">
           Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
         </h1>

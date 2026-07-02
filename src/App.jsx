@@ -14,8 +14,15 @@ import Testimonial from './Testimonial.jsx'
 import Faq from "./Faq.jsx";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
+
 import AdvancedSearch from "./AdvancedSearch.jsx";
 import SearchResults from "./SearchResults.jsx";
+
+import Domain_Control from "./Domain_Control.jsx";
+import Hosting_Automation from "./Hosting_Automation.jsx";
+import Server_Monitoring from "./Server_Monitoring.jsx";
+import Subscription_Hub from "./Subscription_Hub.jsx";
+
 
 function App() {
   return (
@@ -31,12 +38,23 @@ function App() {
     <Route path="/seo" element={<Seo />} />
     <Route path="/ai" element={<Ai />} />
     <Route path="/features" element={<Features />} />
+
+
+    <Route path="/Domain_Control" element={<Domain_Control/>}/>
+    <Route path="/Hosting_Automation" element={<Hosting_Automation/>}/>
+    <Route path="/Server_Monitoring" element={<Server_Monitoring/>}/>
+    <Route path="/Subscription_Hub" element={<Subscription_Hub/>}/>
+    
+
     <Route path="/pricing" element={<Pricing />} />
     <Route path="/testimonial" element={<Testimonial />} /> 
     <Route path="/faq" element={<Faq />} />
     <Route path="/contact" element={<Contact />} />
+
     <Route path="/advanced-search" element={<AdvancedSearch />} />
     <Route path="/search-results" element={<SearchResults />} />
+
+
   </Routes>
 </div>
   )
