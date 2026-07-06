@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import Nav from './Nav.jsx'
 import h1 from './assets/h1.png'
 import h2 from './assets/h2.png'
@@ -105,13 +106,13 @@ const Home = () => {
 
       {/* Button: Matches the dark gradient and rounded corners */}
       <div className="mt-12">
-        <a href="/pricing">
+        <Link to="/pricing">
           <button className="cursor-pointer px-10 py-3.5 text-[17px] font-semibold text-white rounded-xl 
             bg-[#E7000B]
             shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:opacity-95 transition-all">
             Get Stared
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   </div>

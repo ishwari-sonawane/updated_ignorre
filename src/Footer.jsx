@@ -36,18 +36,18 @@ const Footer = () => {
           infrastructure today
         </p>
 
+        <Link to="/product">
         <button
           className="
             h-12 w-52
             bg-white text-black
             flex justify-center items-center gap-2
             rounded-2xl
-            flex-shrink-0
-          "
-        >
+            flex-shrink-0">
           Get Started Now
           <RiArrowRightUpLine size={20} />
         </button>
+        </Link>
       </div>
 
       <div className="h-[1px] w-full bg-zinc-700 my-6"></div>

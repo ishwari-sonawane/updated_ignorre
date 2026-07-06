@@ -676,11 +676,11 @@ const cardsData = [
           </div>
 
           <div
-            className="w-full max-w-[420px] mx-auto p-3 mt-10 bg-white/10 backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            style={{
-              background:
-                "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-            }}
+            className="w-full max-w-[420px] mx-auto p-3 mt-10 bg-white backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+            // style={{
+            //   background:
+            //     "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+            // }}
           >
             <img src={aibussiness} alt="" />
             <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">
@@ -703,40 +703,45 @@ const cardsData = [
             {/* Grid cards stacked */}
             <div className="grid grid-cols-1 gap-6 mt-10">
               {/* Chat */}
-              <div className="bg-white/10 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-                style={{ background: "radial-gradient(circle, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
+              <div className="bg-white rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+                // style={{ background: "radial-gradient(circle, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}
+                >
                 <img src={aichat} alt="" />
                 <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Chat</h1>
                 <p className="text-[15px] text-zinc-950">Chat naturally with powerful AI models.</p>
               </div>
 
               {/* Comparison */}
-              <div className="bg-white/10 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-                style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
+              <div className="bg-white rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+                // style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}
+                >
                 <img src={sdh} alt="" />
                 <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">Model Comparison</h1>
                 <p className="text-[15px] text-zinc-950">Compare models by quality, speed & cost.</p>
               </div>
 
               {/* Playground */}
-              <div className="bg-white/10 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-                style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
+              <div className="bg-white/90 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+                // style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}
+                >
                 <img src={aidetection} alt="" />
                 <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Playground</h1>
                 <p className="text-[15px] text-zinc-950">Test prompts, tune models, experiment safely.</p>
               </div>
 
               {/* Ignorre search */}
-              <div className="bg-white/10 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-                style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
+              <div className="bg-white rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+                // style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}
+                >
                 <img src={ignorre} alt="" />
                 <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">Ignorre Search</h1>
                 <p className="text-[15px] text-zinc-950">Real-time, web-aware search answers.</p>
               </div>
 
               {/* Agents */}
-              <div className="bg-white/10 rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-                style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
+              <div className="bg-white rounded-lg p-3 mt-10 backdrop-blur-md shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+                // style={{ background: "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}
+                >
                 <img src={cg} alt="" />
                 <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Agents</h1>
                 <p className="text-[15px] text-zinc-950">Autonomous agents to execute tasks.</p>
@@ -784,11 +789,11 @@ const cardsData = [
           </div>
 
           <div
-            className="w-full max-w-[360px] h-[320px] p-4 mt-12 bg-white/10 backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            style={{
-              background:
-                "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-            }}
+            className="w-full max-w-[360px] h-[320px] p-4 mt-12 bg-white backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+            // style={{
+            //   background:
+            //     "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+            // }}
           >
             <img src={aibussiness} alt="" />
             <h1 className="text-[22px] font-semibold mb-4 mt-4 text-zinc-950">
@@ -814,10 +819,10 @@ const cardsData = [
           {/* Row 1 */}
           <div className="grid grid-cols-2 gap-5 mt-10">
             <div
-              className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}
+              className="w-full h-80 bg-white backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
             >
               <img src={aichat} alt="" />
               <h1 className="text-[22px] font-semibold mb-3 mt-4 text-zinc-950">AI Chat</h1>
@@ -825,10 +830,11 @@ const cardsData = [
                 Chat naturally with powerful AI models for work, learning, and problem-solving.
               </p>
             </div>
-            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-80 bg-white backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={sdh} alt="" />
               <h1 className="text-[22px] font-semibold mb-3 mt-4 text-zinc-950">Model Comparison</h1>
               <p className="text-[14px] text-zinc-950">
@@ -839,20 +845,22 @@ const cardsData = [
 
           {/* Row 2 */}
           <div className="grid grid-cols-2 gap-5 mt-8">
-            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-80 bg-white/90 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={aidetection} alt="" />
               <h1 className="text-[22px] font-semibold mb-3 mt-4 text-zinc-950">AI Playground</h1>
               <p className="text-[14px] text-zinc-950">
                 Test prompts, tune models, and experiment safely before deploying.
               </p>
             </div>
-            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-80 bg-white backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={ignorre} alt="" />
               <h1 className="text-[22px] font-semibold mb-3 mt-4 text-zinc-950">Ignorre Search</h1>
               <p className="text-[14px] text-zinc-950">
@@ -863,10 +871,11 @@ const cardsData = [
 
           {/* Row 3 */}
           <div className="grid grid-cols-2 gap-5 mt-8">
-            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-80 bg-white backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={cg} alt="" />
               <h1 className="text-[22px] font-semibold mb-3 mt-4 text-zinc-950">AI Agents</h1>
               <p className="text-[14px] text-zinc-950">
@@ -917,11 +926,11 @@ const cardsData = [
           </div>
 
           <div
-            className="w-full max-w-[420px] p-3 mt-16 bg-white/10 backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            style={{
-              background:
-                "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-            }}
+            className="w-full max-w-[420px] p-3 mt-16 bg-white backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+            // style={{
+            //   background:
+            //     "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+            // }}
           >
             <img src={aibussiness} alt="" />
             <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">
@@ -945,10 +954,10 @@ const cardsData = [
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10 mt-13">
             <div
-              className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
-              style={{
-                background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}
+              className="w-full h-93 bg-white backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
             >
               <img src={aichat} alt="" />
               <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Chat</h1>
@@ -956,10 +965,11 @@ const cardsData = [
                 Chat naturally with powerful AI models for work, learning, and problem-solving.
               </p>
             </div>
-            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-93 bg-white backdrop-blur-md rounded-lg p-5 mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={sdh} alt="" />
               <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">Model Comparison</h1>
               <p className="text-[15px] text-zinc-950">
@@ -969,20 +979,22 @@ const cardsData = [
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10">
-            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-93 bg-white/90 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={aidetection} alt="" />
               <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Playground</h1>
               <p className="text-[15px] text-zinc-950">
                 Test prompts, tune models, and experiment safely before deploying.
               </p>
             </div>
-            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-93 bg-white backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={ignorre} alt="" />
               <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">Ignorre Search</h1>
               <p className="text-[15px] text-zinc-950">
@@ -992,10 +1004,11 @@ const cardsData = [
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10">
-            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-              style={{
-                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-              }}>
+            <div className="w-full h-93 bg-white backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              // style={{
+              //   background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              // }}
+              >
               <img src={cg} alt="" />
               <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">AI Agents</h1>
               <p className="text-[15px] text-zinc-950">
@@ -1455,245 +1468,8 @@ const cardsData = [
     
 
 
-    
-      {/* seventh Page */}
 
-<div className="Gfont  w-full flex flex-col items-center -mt-30  px-4 sm:px-6 abc bg-black md:pb-40">
-  {/* HEADER — SAME FOR ALL DEVICES */}
-  <div className="slide-up text-center h-auto lg:h-80 w-full mt-5 px-2 abc md:pt-40 ">
-    {/* <IoPricetagOutline size={18} className="mx-auto lg:ml-217 -mb-5 text-red-600 transform scale-x-[-1]" /> */}
-    <p className="text-[16px] sm:text-[18px] text-red-600 font-semibold">Pricing Plans</p>
-    <h1 className=" text-[26px] sm:text-[32px] lg:text-[44px] font-semibold mb-5 mt-4 text-white">
-      Choose the Right Plan for Your <span className="text-red-600">AI Journey</span>
-    </h1>
-    <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-zinc-500">
-      Whether you’re just getting started or scaling fast, Ignorre AI offers flexible pricing designed to support <br className="hidden lg:block" /> every stage of your AI adoption. Get powerful tools, reliable support, and high performance—on your terms.
-    </p>
-  </div>
-
-  {/* TOGGLE — Same everywhere */}
-  <div className="w-full flex flex-col items-center mt-0 abc">
-    <div className="flex items-center gap-2 border border-zinc-200 rounded-full px-2 py-1 bg-white shadow-sm mt-16">
-      <button
-        onClick={() => setBillingCycle("monthly")}
-        className={`px-5 py-2 rounded-full font-medium transition text-[18px] ${
-          billingCycle === "monthly" ? "bg-zinc-950 text-white" : "text-zinc-500"
-        }`}
-      >
-        Monthly
-      </button>
-      <span className="text-zinc-400">|</span>
-      <button
-        onClick={() => setBillingCycle("yearly")}
-        className={`flex items-center gap-2 px-5 py-2 rounded-full font-medium transition text-[18px] ${
-          billingCycle === "yearly" ? "bg-zinc-950 text-white" : "text-zinc-500"
-        }`}
-      >
-        Yearly
-        {billingCycle === "yearly" && (
-          <span className="text-white font-semibold text-sm text-[15px]">20% OFF</span>
-        )}
-      </button>
-    </div>
-  </div>
-
-  {/* --- RESPONSIVE VIEW HANDLING --- */}
-  {isMobile || isTablet ? (
-    /* 📱 MOBILE + TABLET STACKED VIEW */
-    <div className="mt-10 flex flex-col gap-6 justify-center items-center abc">
-
-      {/* STARTER */}
-      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-zinc-200 lg:h-140">
-       <p className="font-semibold text-zinc-950">Starter</p>
-              <div className="flex items-end gap-2 mt-2 text-zinc-950">
-                <h1 className="text-[50px] font-bold">${pricing2.starter}</h1>
-                <p className="text-zinc-500 mb-6">/ month</p>
-              </div>
-              <p className="text-[15px] text-zinc-600 mt-2 mb-4 Gfont">
-                Perfect for individuals and small teams starting their journey with AI-powered productivity.
-              </p>
-              <a href="/contact">
-                <button className="text-[18px] group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-zinc-900 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px] text-zinc-600">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Unlimited AI chat & search usage</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Access to core AI tools and agents</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Community & standard support</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Regular feature updates</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Secure cloud-based access</li>
-              </ul>
-      </div>
-
-      {/* PRO */}
-      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-zinc-200 lg:h-140 ">
-        <div className="flex items-center gap-2">
-                <p className="font-semibold text-zinc-950">Pro</p>
-                <FaFireAlt className="text-red-600" />
-                <span className="text-red-600 font-medium">Popular</span>
-              </div>
-              <div className="flex items-end gap-2 mt-2">
-                <h1 className="text-[50px] font-bold bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                  ${pricing2.pro}
-                </h1>
-                <p className="text-zinc-500 mb-6">/ month</p>
-              </div>
-              <p className="text-[15px] text-zinc-600 mt-2 mb-4">
-                Ideal for growing teams that need deeper insights, automation, and integrations.
-              </p>
-              <a href="/contact">
-                <button className="group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-gradient-to-r from-red-600 to-red-700 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px] text-zinc-600">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Everything in Starter</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> 3rd-party app integrations</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Advanced analytics & insights</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Team performance dashboard</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Priority support & enhanced security</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Detailed usage & activity reports</li>
-              </ul>
-      </div>
-
-      {/* ENTERPRISE */}
-      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-zinc-200">
-       <p className="font-semibold text-zinc-950">Enterprise</p>
-              <h1 className="text-[50px] font-bold mt-2 text-zinc-950">Custom</h1>
-              <p className="text-[15px] text-zinc-950 mt-2 mb-4">
-                Built for large organizations with advanced customization, security, and scalability needs.
-              </p>
-              <a href="/contact">
-                <button className="group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-zinc-950 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px]">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Dedicated account & success manager</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Custom dashboards & reports</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Full performance & feature access</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Enterprise onboarding & training</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> API integrations & SLAs</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />AI model customization using your data</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Advanced security & compliance support</li>
-              </ul>
-      </div>
-    </div>
-  ) : (
-    /* 💻 DESKTOP + LAPTOP — ANIMATED SLIDER VIEW */
-    <div className="mt-10 flex flex-col md:flex-row gap-6 justify-center items-center flex-wrap abc">
-      {/* STARTER */}
-      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-zinc-200 h-[550px]">
-      <p className="font-semibold text-zinc-950">Starter</p>
-              <div className="flex items-end gap-2 mt-2 text-zinc-950">
-                <h1 className="text-[50px] font-bold">${pricing2.starter}</h1>
-                <p className="text-zinc-500 mb-6">/ month</p>
-              </div>
-              <p className="text-[15px] text-zinc-600 mt-2 mb-4 Gfont">
-                Perfect for individuals and small teams starting their journey with AI-powered productivity.
-              </p>
-              <a href="/contact">
-                <button className="text-[18px] group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-zinc-950 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px] text-zinc-600">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Unlimited AI chat & search usage</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Access to core AI tools and agents</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Community & standard support</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Regular feature updates</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Secure cloud-based access</li>
-              </ul>
-      </div>
-
-      {/* PRO */}
-      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-zinc-200 h-[550px]">
-        <div className="flex items-center gap-2">
-                <p className="font-semibold text-zinc-950">Pro</p>
-                <FaFireAlt className="text-red-600" />
-                <span className="text-red-600 font-medium">Popular</span>
-              </div>
-              <div className="flex items-end gap-2 mt-2">
-                <h1 className="text-[50px] font-bold bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
-                  ${pricing2.pro}
-                </h1>
-                <p className="text-zinc-500 mb-6">/ month</p>
-              </div>
-              <p className="text-[15px] text-zinc-600 mt-2 mb-4">
-                Ideal for growing teams that need deeper insights, automation, and integrations.
-              </p>
-              <a href="/contact">
-                <button className="group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-gradient-to-r from-red-600 to-red-700 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px] text-zinc-600">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Everything in Starter</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> 3rd-party app integrations</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Advanced analytics & insights</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Team performance dashboard</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Priority support & enhanced security</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Detailed usage & activity reports</li>
-              </ul>
-      </div>
-
-      {/* ENTERPRISE */}
-      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-zinc-200 h-[550px]">
-        <p className="font-semibold text-zinc-950">Enterprise</p>
-              <h1 className="text-[50px] font-bold mt-2 text-zinc-950">Custom</h1>
-              <p className="text-[15px] text-zinc-950 mt-2 mb-4">
-                Built for large organizations with advanced customization, security, and scalability needs.
-              </p>
-              <a href="/contact">
-                <button className="group flex items-center justify-center gap-2 w-full text-white py-3 rounded-full bg-zinc-950 transition shadow">
-                  Get Started Now
-                  <MdOutlineArrowOutward size={18} className="transition-transform duration-300 group-hover:rotate-45" />
-                </button>
-              </a>
-
-              <p className="mt-5 text-[15px]">Includes :</p>
-
-              <ul className="mt-3 space-y-3 text-[15px] text-zinc-600">
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Dedicated account & success manager</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Custom dashboards & reports</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Full performance & feature access</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> Enterprise onboarding & training</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" /> API integrations & SLAs</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />AI model customization using your data</li>
-                <li className="flex gap-2"><FaCheckCircle className="text-zinc-950" />Advanced security & compliance support</li>
-              </ul>
-      </div>
-    </div>
-  )}
-</div>
-
-
-      {/* eighth page  */}
-
-
-
-    <div className="bg-white min-h-screen w-full overflow-x-hidden Gfont abc mt-20 mb-20">
+    <div className="bg-white min-h-screen w-full overflow-x-hidden Gfont abc md:mt-0 -mt-100 mb-20">
   <div
     className="
       max-w-7xl

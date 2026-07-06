@@ -765,16 +765,16 @@ const faqs = [
         Results-Driven <span className="text-[#E7000B]">SEO</span> Performance
       </p>
 
-      <p className="text-[15px] lg:text-[16px] text-[#E7000B] font-medium mt-3 text-center lg:text-left">
+      <p className="text-[15px] lg:text-[16px] text-[#E7000B] font-medium mt-4 text-center lg:text-left">
 
         Updated in real time
       </p>
 
-      <p className="text-[22px] lg:text-[24px] font-medium mt-3 text-center lg:text-left text-zinc-950">
+      <p className="text-[22px] lg:text-[24px] font-medium mt-4 text-center lg:text-left text-zinc-950">
         Statistics
       </p>
 
-      <div className="flex justify-between items-start mt-4 text-center lg:text-left">
+      <div className="flex justify-between items-start mt-5 text-center lg:text-left">
         <div>
           <p className="text-[18px] lg:text-[20px] font-medium">10,000+</p>
           <p className="text-[15px] lg:text-[16px] text-zinc-400 font-medium">
@@ -797,11 +797,6 @@ const faqs = [
         </div>
       </div>
 
-
-      <div className="flex justify-center lg:justify-start -mt-13">
-        <img src={redbrandbg} alt="" />
-
-      </div>
     </div>
 
     {/* RIGHT CONTENT */}
@@ -1028,312 +1023,10 @@ const faqs = [
 </section>
 
 
-<section id="pricing" className='bg-black abc mt-30 pb-20'>
-
-  {/* HEADER */}
-  <div
-    className="
-      slide-up
-      flex flex-col
-      lg:flex-row
-      items-center
-      justify-center
-      pt-24 lg:pt-30
-      gap-10 lg:gap-100
-      px-4
-      text-center lg:text-left
-    "
-  >
-    <div>
-
-      <button className="text-[14px] font-medium text-[#E7000B]">
-        Pricing
-      </button>
-      <p className="reveal-text text-[32px] sm:text-[40px] lg:text-[48px] text-white font-bold mt-3">
-
-        Flexible <span className="text-red-600">SEO Plans</span>
-      </p>
-    </div>
-
-    <div className="flex flex-col items-center lg:items-start">
-      <div className="flex">
-        <img src={p5} alt="" className="h-12 lg:h-15" />
-        <img src={p4} alt="" className="h-12 lg:h-15 -ml-6" />
-        <img src={p3} alt="" className="h-12 lg:h-15 -ml-6" />
-        <img src={p2} alt="" className="h-12 lg:h-15 -ml-6" />
-        <img src={p1} alt="" className="h-12 lg:h-15 -ml-6" />
-        <p className="text-red-600 text-[20px] lg:text-[24px] ml-4 mt-3 font-medium">
-          10,000+
-        </p>
-      </div>
-      <p className="text-[16px] lg:text-[20px] text-zinc-600 font-medium mt-4 text-center lg:text-left">
-        SEO professionals onboarded every month
-      </p>
-    </div>
-  </div>
-
-  {/* TOGGLE */}
- <div className="w-full flex justify-center px-4 mt-15">
-  <div
-    className="
-      inline-flex
-      items-center
-      relative
-      bg-zinc-100
-      border
-      border-zinc-200
-      rounded-full
-      p-2
-      text-[16px]
-      font-medium
-      mx-auto
-    "
-  >
-    {/* Sliding Background */}
-    <div
-      className={`absolute top-1 bottom-1 w-1/2 bg-red-600 rounded-full transition-all duration-300 ${
-        active === "monthly" ? "left-1" : "left-1/2"
-      }`}
-    />
-
-    {/* Monthly Button */}
-    <button
-      onClick={() => setActive("monthly")}
-      className={`relative z-10 px-4 sm:px-6 py-1 rounded-full transition-colors ${
-        active === "monthly"
-          ? "text-white"
-          : "text-zinc-400"
-      }`}
-    >
-      Monthly
-    </button>
-
-    {/* Annually Button */}
-    <button
-      onClick={() => setActive("annually")}
-      className={`relative z-10 px-4 sm:px-6 py-1 rounded-full transition-colors ${
-        active === "annually"
-          ? "text-white"
-          : "text-zinc-400"
-      }`}
-    >
-      Annually
-    </button>
-  </div>
-</div>
-
-  {/* PRICING CARDS */}
-  <div
-    className="
-      slide-up
-      grid grid-cols-1
-      md:grid-cols-2
-     lg:grid-cols-2 xl:flex
-      justify-center
-      items-center
-      gap-8 md:gap-5
-      mt-12 lg:mt-20
-      px-4 
-    "
-  >
-     <div className="price-card border border-zinc-200 w-full sm:w-[90%] md:w-[380px] lg:w-95 h-auto lg:h-155 flex flex-col gap-5 shadow-2xl rounded-xl p-5 bg-white">
-        <p className='text-[24px] font-semibold text-zinc-950'>Starter</p>
-        <p className='text-[14px] font-medium text-zinc-500'>Ideal for freelancers, startups, and small websites.</p>
-        <div className='flex gap-4'>
-          <p className='text-[48px] font-bold text-zinc-950'>
-           ${pricing[active].starter}
-          </p>
-          <p className='text-[14px] font-medium text-zinc-500 mt-7'>(billed monthly)</p>
-        </div>
-        <p className='text-[16px] text-zinc-500 font-medium'>Plan includes:</p>
-       <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>AI-powered keyword research</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Basic SERP analysis</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Limited competitor tracking</p></div>
-       <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Site audit (basic)</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Track up to 250 keywords</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>1 SEO project</p></div>
-        <div className='flex items-center justify-center'>
-
-          <button className='text-[16px] text-white rounded-2xl w-80 h-13 bg-[#E7000B] hover:brightness-110 transition'>Choose This</button>
-        </div>
-      </div>
-
-       <div className="price-card w-full sm:w-[90%] md:w-[380px] lg:w-95 h-auto lg:h-155 flex flex-col gap-5 shadow-2xl rounded-xl p-5 bg-[#E7000B]">
-        <p className='text-[24px] text-white font-bold'>Pro</p>
-        <p className='text-[14px] text-white font-medium'>Best for growing businesses and SEO teams.</p>
-        <div className='flex gap-4'>
-          <p className='text-[48px] text-white font-bold'>
-           ${pricing[active].pro}
-            </p>
-          <p className='text-[14px] text-white font-medium mt-6'>(billed monthly)</p>
-        </div>
-        <p className='text-[16px] text-white'>Plan includes:</p>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>Advanced AI SEO insights</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>Full competitor analysis</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>Content optimization with search intent</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>Track up to 2,000 keywords</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>5 SEO projects</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-white font-medium'>Team collaboration & user management</p></div>
-        <div className='flex items-center justify-center'>
-          <button className='text-[16px] text-[#E7000B] rounded-2xl w-80 h-13 border-blue-700 bg-white hover:brightness-110 transition'>Choose This</button>
-        </div>
-      </div>
-
-        <div className="price-card border border-zinc-200 w-full sm:w-[90%] md:w-[380px] lg:w-95 h-auto lg:h-155 flex flex-col gap-5 shadow-2xl rounded-xl p-5 bg-white">
-        <p className='text-[24px] text-zinc-950 font-semibold'>Business</p>
-        <p className='text-[14px] text-zinc-500 font-medium'>Built for agencies and large organizations.</p>
-        <div className='flex gap-5'>
-          <p className='text-[48px] text-zinc-950 font-bold'>Custom</p>
-          <p className='text-[14px] text-zinc-500 mt-8'>(billed monthly)</p>
-        </div>
-        <p className='text-[16px]'>Plan includes:</p>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Unlimited keyword tracking</p></div>
-      <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Advanced site audits</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Custom SEO workflows</p></div>
-       <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>API & data export access</p></div>
-        <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Dedicated account manager</p></div>
-         <div className='flex gap-2'><IoCheckboxSharp size={20} className='text-white bg-zinc-950'/> <p className='text-[16px] text-zinc-500 font-medium'>Enterprise-grade security & SLA</p></div>
-        <div className='flex items-center justify-center'>
-
-          <button className='text-[16px] text-white rounded-2xl w-80 h-13 bg-[#E7000B] hover:brightness-110 transition'>Choose This</button>
-
-        </div>
-      </div>
-    </div>
-
- <div className="flex justify-center items-center mt-10 px-4">
-    <div
-      className="
-        slide-up flex flex-col lg:flex-row border border-zinc-300 p-5 bg-white gap-8 lg:gap-18 rounded-2xl shadow-2xl w-full sm:w-[95%] lg:w-auto">
-      {/* LEFT */}
-      <div className="text-center lg:text-left">
-        <p className="text-[22px] lg:text-[24px] font-medium text-zinc-950">Education</p>
-        <p className="text-[15px] lg:text-[17px] text-zinc-500 font-medium mt-2">
-          Ideal for students, educators, and academic
-          <br className="hidden lg:block" />
-          researchers learning SEO.
-        </p>
-
-        <button className="mt-4 text-[16px] text-white rounded-2xl w-full sm:w-50 h-13 bg-[#E7000B] hover:brightness-110 transition">
-
-          Apply Now
-        </button>
-      </div>
-
-      {/* RIGHT */}
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex flex-col gap-6">
-          <p className="text-[16px] font-medium text-zinc-950">Plan includes:</p>
-          <div className="flex gap-2 ">
-            <IoCheckboxSharp size={20} className="text-white bg-zinc-950" />
-            <p className="text-[16px] text-zinc-500 font-medium">
-              Access to AI-powered SEO research tools
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <IoCheckboxSharp size={20} className="text-white bg-zinc-950" />
-            <p className="text-[16px] text-zinc-500 font-medium">
-              Keyword research & SERP analysis
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-6 md:mt-10">
-          <div className="flex gap-2">
-            <IoCheckboxSharp size={20} className="text-white bg-zinc-950" />
-            <p className="text-[16px] text-zinc-500 font-medium">
-              SEO use cases for research projects & case studies
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <IoCheckboxSharp size={20} className="text-white bg-zinc-950" />
-            <p className="text-[16px] text-zinc-500 font-medium">
-              Up to 25 GB storage for SEO reports & exports
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
-<div className='bg-white abc'>
-  {/* TEXT SECTION */}
-  <div
-    className="
-      slide-up
-      flex flex-col
-      lg:flex-row
-      justify-center
-      items-center
-      text-center lg:text-start
-      gap-10 md:gap-16 lg:gap-100
-      pt-24 lg:pt-50
-      px-4
-    "
-  >
-    <div>
 
-      <button className="text-[14px] font-medium text-[#E7000B]">
-
-        SEO
-      </button>
-
-      <p className="reveal-text text-[32px] sm:text-[40px] lg:text-[48px] font-bold mt-4 text-zinc-950">
-        <span className="text-red-600">Backbone</span> of Every <br className="hidden lg:block" />
-        SEO Strategy
-      </p>
-    </div>
-
-    <div className="flex flex-col gap-6 items-center lg:items-start">
-      <p className="reveal-text text-[15px] lg:text-[16px] text-zinc-500 font-medium text-center lg:text-start">
-        Ignorre SEO analyzes real-time search trends,
-        <br className="hidden lg:block" />
-        keyword intent, SERP competition, and on-page
-        <br className="hidden lg:block" />
-        ranking signals — so every decision is backed by data.
-      </p>
-
-
-      <button className="text-[16px] text-white rounded-2xl w-full sm:w-50 h-13 bg-[#E7000B] hover:brightness-110 transition">
-
-        Start SEO Analysis
-      </button>
-    </div>
-  </div>
-
-  {/* IMAGES SECTION */}
-  <div
-    className="
-      flex flex-col
-      sm:flex-row
-    
-      gap-6 md:gap-5
-      items-center
-      justify-center
-      mt-12 lg:mt-20
-      px-4 lg:flex
-    "
-  >
-    <img
-      src={seo1}
-      alt=""
-      className="h-48 sm:h-56 lg:h-50 w-full sm:w-96 md:w-70 md:h-50 lg:w-90 xl:w-120 xl:h-60 rounded-full object-cover lg:ml-15"
-    />
-    <img
-      src={seo2}
-      alt=""
-      className="h-48 sm:h-56 lg:h-60 md:h-50 rounded-full object-cover"
-    />
-    <img
-      src={seo3}
-      alt=""
-      className="h-48 sm:h-56 lg:h-50 w-full sm:w-96 md:w-70 md:h-50  lg:w-90 xl:w-120 xl:h-60 rounded-full object-cover"
-    />
-  </div>
-</div>
 
 
 <div className='bg-black lg:mt-30 abc lg:pb-20'>

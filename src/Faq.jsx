@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { FiChevronDown } from 'react-icons/fi';
 import Footer from "./Footer.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
@@ -106,11 +107,11 @@ const Faq = () => {
             Still have questions?{' '}
             <br />
             
-            <a href="/contact">
+            <Link to="/contact">
               <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 mt-2">
          Contact Our Support Team
         </button>
-            </a>
+            </Link>
           </p>
         </div>
       </div>

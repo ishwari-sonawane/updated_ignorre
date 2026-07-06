@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import { motion } from 'framer-motion';
 import { useNavigate } from "react-router-dom";
@@ -411,13 +412,17 @@ useEffect(() => {
 
     {/* Buttons */}
     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <button className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
+      <Link to="/pricing">
+        <button className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
         Get started for free <GoArrowRight size={16} />
       </button>
+      </Link>
 
+       <Link to="/product">
       <button className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
         <IoGiftOutline size={16} /> Explore
       </button>
+      </Link>
     </div>
 
     {/* Avatars */}
@@ -492,9 +497,11 @@ useEffect(() => {
           ))}
         </div>
       </section>
-      <a href="/product"> <button className="-mt-5 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+     <Link to="/product">
+      <button className="-mt-5 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Know More <TiArrowRight className='text-[30px]'/>
-        </button></a> 
+        </button>
+        </Link> 
 
   </div>
 
@@ -555,9 +562,11 @@ useEffect(() => {
                 </motion.div>
               ))}
             </motion.div>
-             <a href="/features"> <button className="mt-10 sm:mt-15 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+             <Link to="/features"> 
+             <button className="mt-10 sm:mt-15 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Explore More <TiArrowRight className='text-[30px]'/>
-        </button></a> 
+        </button>
+        </Link> 
 
         </div>
 
@@ -803,9 +812,11 @@ useEffect(() => {
   </div>
 </div>
 
- <a href="/testimonial"> <button className="mt-0 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center justify-center gap-3">
+ <Link to="/testimonial">
+ <button className="mt-0 mb-10 sm:mb-15 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center justify-center gap-3">
           Read More <TiArrowRight className='text-[30px]'/>
-        </button></a> 
+        </button>
+        </Link> 
         </div>
 
   
@@ -869,11 +880,11 @@ useEffect(() => {
                 <p className="text-zinc-500 text-[16px] font-semibold abc">
                   Still have questions?{' '}
                   <br />
-                 <a href="/contact">
+                <Link to="/contact">
               <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 mt-2">
          Contact Our Support Team
         </button>
-        </a>
+        </Link>
 
                   
                 </p>
