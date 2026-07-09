@@ -125,7 +125,7 @@ const Testimonial = () => {
         </a>
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-zinc-950 abc">
 
-          Trusted by <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
+          Trusted by <span className="text-[#E7000B] abc">Thousands</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
           Discover why businesses choose ignorre.com for domains, hosting,

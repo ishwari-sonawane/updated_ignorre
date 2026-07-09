@@ -67,7 +67,7 @@ const Features = () => {
           Features
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-zinc-950 abc leading-tight">
-          Everything You Need to Power Your <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500">Online Business</span>
+          Everything You Need to Power Your <span className="text-[#E7000B]">Online Business</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           Ignorre.com brings domains, hosting, servers, and subscriptions together in one intelligent platform — built for speed, security, and effortless scaling.

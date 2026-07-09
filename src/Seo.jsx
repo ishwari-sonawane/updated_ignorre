@@ -489,7 +489,7 @@ const faqs = [
 </section>
 
 
-<section id="features" className='bg-black 2xl:mt-40 2xl:pb-20  abc'>
+<section id="features" className='bg-black 2xl:mt-40 2xl:pb-20 pt-10 pb-20 abc'>
      <div className="slide-up flex flex-col justify-center items-center  2xl:pt-20 px-4">
     <button className="text-[#E7000B]">
       SEO Features
@@ -510,7 +510,7 @@ const faqs = [
 
                 <p className='reveal-text text-[14px] text-[#E7000B] mt-3'>Keyword-Optimized Content</p>
                 <p className='reveal-text text-[20px] text-zinc-950 mt-5 font-semibold'>How to Rank for High-Intent Keywords</p>
-                <p className='reveal-text text-[14px] text-zinc-400 mt-5'>Analyze search intent, keyword difficulty, and SERP competitors before creating <br/>content.</p>
+                <p className='reveal-text text-[14px] text-zinc-400 mt-5'>Analyze search intent, keyword difficulty, and SERP competitors before creating content.</p>
                  <div className='p-4 mt-4 rounded-2xl flex items-center justify-center bg-[#E7000B]'>
             <button className='text-[18px] text-white font-semibold'>Continue</button>
         </div>
@@ -521,59 +521,9 @@ const faqs = [
 
             <div>
                  <div className='slide-up lg:h-75 2xl:h-75 w-90 ml-5 sm:w-[90%] lg:w-[500px] 2xl:w-140 bg-white border border-zinc-200 rounded-2xl shadow-xl p-5 lg:ml-5 xl:ml-0 md:w-120'>
-                <p className='reveal-text text-[20px] text-zinc-950 font-semibold'>AI-Driven SEO Content Optimization</p>
-                <p className='reveal-text text-[14px] mt-8'>Up to <span className='text-red-600'>32%</span> improvement in organic visibility</p>
-                <div className="relative overflow-hidden w-full sm:w-[90%]  mt-7">
-                    <div className="flex w-max marquee-track">
-                     {/* Track 1 */}
-                    <div className="flex gap-15 px-5">
-                    <img src={f1} className="h-8" />
-                    <img src={f2} className="h-8" />
-                    <img src={f3} className="h-8" />
-                    <img src={f4} className="h-8" />
-                    <img src={f5} className="h-8" />
-                    <img src={f6} className="h-8" />
-                    <img src={f7} className="h-8" />
-                    </div>
-
-                    {/* Track 2 (clone) */}
-                    <div className="flex gap-15 px-5">
-                    <img src={f1} className="h-8" />
-                    <img src={f2} className="h-8" />
-                    <img src={f3} className="h-8" />
-                    <img src={f4} className="h-8" />
-                    <img src={f5} className="h-8" />
-                    <img src={f6} className="h-8" />
-                    <img src={f7} className="h-8" />
-                    </div>
-                    </div>
-                    </div>
-
-                    <div className="overflow-hidden w-full sm:w-[90%] mt-7 ">
-                    <div className="flex w-max marquee">
-                    {/* Track 1 */}
-                    <div className="flex gap-15 px-5">
-                    <img src={f9} className="h-8" />
-                    <img src={f10} className="h-8" />
-                    <img src={f11} className="h-8" />
-                    <img src={f12} className="h-8" />
-                    <img src={f13} className="h-8" />
-                    <img src={f14} className="h-8" />
-                    <img src={f15} className="h-8" />
-                    </div>
-
-                    {/* Track 2 (clone) */}
-                    <div className="flex gap-15 px-5">
-                    <img src={f9} className="h-8" />
-                    <img src={f10} className="h-8" />
-                    <img src={f11} className="h-8" />
-                    <img src={f12} className="h-8" />
-                    <img src={f13} className="h-8" />
-                    <img src={f14} className="h-8" />
-                    <img src={f15} className="h-8" />
-                    </div>
-                    </div>
-                    </div>
+                <p className='reveal-text text-[26px] text-zinc-950 font-semibold mt-10'>AI-Driven SEO Content Optimization</p>
+                <p className='reveal-text text-[20px] mt-8'>Up to <span className='text-red-600'>32%</span> improvement in organic visibility</p>
+                
             </div>
 
 
@@ -987,7 +937,7 @@ const faqs = [
 
 <section id="testimonials" className='bg-white abc'>
 
-  <div className='flex flex-col justify-center items-center text-center pt-30'>
+  <div className='flex flex-col justify-center items-center text-center pt-20'>
      <button className='text-[14px] font-medium text-[#E7000B]'>Testimonial</button>
     <p className='reveal-text text-[48px] text-zinc-950 font-bold'>What SEO Team Say About <br/><span className='text-red-600'>Ignorre SEO</span></p>
     <p className='reveal-text text-[16px] text-zinc-500 font-medium mt-5'>Learn how ignorre SEO helps teams improve rankings, traffic, and search performance.</p>
@@ -1029,9 +979,9 @@ const faqs = [
 
 
 
-<div className='bg-black lg:mt-30 abc lg:pb-20'>
+<div className='bg-black lg:mt-30 abc lg:pb-20 mt-10 pb-10'>
   {/* HEADER */}
-  <div className="slide-up flex flex-col justify-center items-center text-center pt-24 lg:pt-20  px-4">
+  <div className="slide-up flex flex-col justify-center items-center text-center pt-20 lg:pt-20  px-4">
     <button className="text-[14px] font-medium text-[#E7000B]">
       Why ignorre SEO
     </button>
@@ -1231,7 +1181,7 @@ const faqs = [
 
 
 
- <section className="w-full pt-24 lg:pt-50 lg:mt-30 lg:pb-20 bg-black flex items-center justify-center abc">
+ <section className="w-full pt-20 pb-20 lg:pt-50 lg:mt-30 lg:pb-20 bg-black flex items-center justify-center abc">
 
   <div
     className="
@@ -1462,11 +1412,11 @@ const faqs = [
     </div>
 
     {/* FLOATING ICON — DESKTOP ONLY */}
-    <div className="absolute -top-20 right-16 floating hidden lg:block">
+    {/* <div className="absolute -top-20 right-16 floating hidden lg:block">
       <div className="relative">
         <img src={img} alt="" />
       </div>
-    </div>
+    </div> */}
   </div>
 </section>
 

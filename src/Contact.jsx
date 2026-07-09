@@ -148,7 +148,7 @@ export default function SupportSalesSection() {
 
                 className="w-full bg-black border border-gray-900 hover:border-zinc-400 rounded-xl py-4 text-lg font-semibold transition duration-300"
 
-                className="w-full bg-gradient-to-r from-red-500 to-red-600 border border- hover:border-zinc-400 rounded-xl py-4 text-lg font-semibold transition duration-300">
+                className="w-full text-[#E7000B] border border- hover:border-zinc-400 rounded-xl py-4 text-lg font-semibold transition duration-300">
               
                 Send Message
               </button>

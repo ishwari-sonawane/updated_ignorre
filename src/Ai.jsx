@@ -632,7 +632,7 @@ const cardsData = [
               className="h-30 w-60 rounded-lg p-3 m-2 shadow-lg flex flex-col justify-start items-start"
               style={{
                 background:
-                  "linear-gradient(142deg, rgba(92, 96, 191, 0.7) 30%, rgba(70, 113, 215, 0.7) 50%)"
+                  "linear-gradient(145deg, #FF6B6B 0%, #E7000B 60%, #C00000 100%)"
               }}
             >
               <h1 className="text-[50px]">40%</h1>
@@ -927,10 +927,7 @@ const cardsData = [
 
           <div
             className="w-full max-w-[420px] p-3 mt-16 bg-white backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            // style={{
-            //   background:
-            //     "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
-            // }}
+           
           >
             <img src={aibussiness} alt="" />
             <h1 className="text-[26px] font-semibold mb-5 mt-5 text-zinc-950">

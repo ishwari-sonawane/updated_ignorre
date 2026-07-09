@@ -97,7 +97,7 @@ const Product = () => {
           transition={{ delay: 0.1 }}
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-zinc-950 mb-6"
         >
-          Everything You Need in <span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'>One Platform</span>
+          Everything You Need in <span className='text-[#E7000B]'>One Platform</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 10 }}

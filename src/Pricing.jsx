@@ -99,7 +99,7 @@ const PricingPage = () => {
         <p className="text-[#e90011] font-medium text-[14px] mb-4 tracking-wide uppercase">Plans</p>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-zinc-950">
-          Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
+          Plans Built for Domains,<br className="sm:hidden" /><span className='text-[#E7000B]'> Hosting & Servers</span>
         </h1>
         <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto ">
           Whether you're launching your first domain or managing infrastructure at scale, ignore gives you one dashboard for everything. Start free upgrade anytime.

@@ -156,7 +156,7 @@ const faqs = [
 </div>
 
       {/* page second */}
-   <div className="bg-black abc overflow-x-hidden mt-15">
+   <div className="bg-black abc overflow-x-hidden mt-15 pb-10">
   <div
     className="
       slide-up
@@ -459,7 +459,7 @@ const faqs = [
           <img
             src={c1}
             alt=""
-            className="bg-[#E7000B] rounded-xl p-1"
+            className="bg-[#E7000B] rounded-xl p-1  "
           />
           <p className="text-zinc-500">
             Manage DNS, proxies, SSL, and email routing from a single,
@@ -665,7 +665,7 @@ const faqs = [
 
       {/* page sixth */}
 
-     <div className="bg-black abc mt-20">
+     <div className="bg-black abc mt-20 pb-10">
    <div
     className=" slide-up
       min-h-[90vh] w-full max-w-7xl

@@ -312,7 +312,7 @@ useEffect(() => {
     {/* Heading */}
     <h1 className="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[72px] font-extrabold leading-tight text-zinc-950 text-center">
       Get Started Your{" "}
-      <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500">
+      <span className="text-[#E7000B] ">
         {texts[index]}
       </span>
     </h1>
@@ -452,12 +452,7 @@ useEffect(() => {
 
 
   <div className="bg-black w-full flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
-      {/* <header className="pt-24 pb-16 px-6 text-center">
-      <motion.span
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-[#E8000F] font-semibold text-sm tracking-wider uppercase mb-6 block "></motion.span> */}
-
+  
     <header className="pt-24 pb-16 px-6 text-center">
       <motion.span
         initial={{ opacity: 0, y: 10 }}
@@ -471,7 +466,7 @@ useEffect(() => {
               transition={{ delay: 0.1 }}
 
               className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Everything You Need in <span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'>One Platform</span>
+              Everything You Need in <span className='text-[#E7000B]'>One Platform</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 10 }}
@@ -506,7 +501,7 @@ useEffect(() => {
   </div>
 
 
-        <div className="bg-white w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
+        <div className="bg-black w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
           {/* <div className="text-center max-w-4xl mt-20 mb-10 px-4">
         <span className="text-[#E8000F] text-sm font-semibold tracking-wide uppercase abc ">
           Features
@@ -517,20 +512,19 @@ useEffect(() => {
         <span className="text-red-600 text-sm font-semibold tracking-wide uppercase abc ">
           Features
         </span>
-        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-zinc-950 abc leading-tight">
-
-          Everything You Need to Power Your <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500">Online Business</span>
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-white abc leading-tight text-center">
+    Everything You Need to Power Your<br /> <span className="text-[#E7000B]">Online Business</span>
         </h2>
-        <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-20">
           Ignorre.com brings domains, hosting, servers, and subscriptions together in one intelligent platform — built for speed, security, and effortless scaling.
         </p>
-      </div>
-       <motion.div 
+
+ <motion.div 
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full abc"
+              className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full abc "
             >
               {features.map((feature, index) => (
                 <motion.div
@@ -568,6 +562,9 @@ useEffect(() => {
         </button>
         </Link> 
 
+      </div>
+      
+
         </div>
 
                <div className="min-h-screen bg-white text-white py-20 px-4 font-sans selection:bg-red-500/30 overflow-x-hidden abc">
@@ -585,7 +582,7 @@ useEffect(() => {
                       {/* <p className="text-zinc-950 font-medium text-sm mb-4 tracking-wide uppercase border border-zinc-200 w-fit mx-auto py-2 rounded-full px-6">Plans</p> */}
 
                       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-zinc-950">
-                        Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
+                        Plans Built for Domains,<br className="sm:hidden" /><span className='text-[#E7000B]'> Hosting & Servers</span>
                       </h1>
                       <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto ">
                         Whether you're launching your first domain or managing infrastructure at scale, ignore gives you one dashboard for everything. Start free upgrade anytime.
@@ -731,7 +728,7 @@ useEffect(() => {
         </a>
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-white abc">
 
-          Trusted by <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
+          Trusted by <span className="text-[#E7000B]">Thousands</span>
         </h2>
         <p className="text-zinc-500 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
           Discover why businesses choose ignorre.com for domains, hosting,
@@ -828,12 +825,12 @@ useEffect(() => {
 
                 {/* <p className="text-[#E8000F] font-medium mb-4 text-sm uppercase tracking-wide abc"> */}
 
-                <p className="text-zinc-950 font-medium mb-4 text-sm uppercase tracking-wide abc">
+                <p className="text-[#EC001B] font-medium mb-4 text-sm uppercase tracking-wide abc">
 
                   Customer Support
                 </p>
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight text-zinc-950 abc">
-                  Everything You <span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'>Need to Know</span>
+                  Everything You <span className='text-[#E7000B]'>Need to Know</span>
                 </h1>
                 <p className="text-zinc-500 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed abc">
                   Questions about domains, hosting, servers, or managing subscriptions? 

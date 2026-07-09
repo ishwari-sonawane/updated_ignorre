@@ -59,7 +59,7 @@ const Faq = () => {
             Customer Support
           </p>
           <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-zinc-950 abc">
-            Everything You <span className='bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text transition-all duration-500'>Need to Know</span>
+            Everything You <span className='text-[#E7000B]'>Need to Know</span>
           </h1>
           <p className="text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed abc">
             Questions about domains, hosting, servers, or managing subscriptions? 

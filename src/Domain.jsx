@@ -104,7 +104,7 @@ const handleSearch = (value) => {
     <div className="bg-white text-zinc-700">
 
       {/* HERO */}
-     <section className="w-full min-h-[80vh] flex items-center justify-center bg-white abc py-12">
+     <section className="w-full min-h-[80vh] flex items-center justify-center bg-white abc py-24">
        <div className="text-center max-w-4xl w-full px-4">
      
          {/* Heading */}
